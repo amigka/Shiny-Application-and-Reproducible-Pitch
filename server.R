@@ -4,7 +4,7 @@ library(UsingR)
 
 shinyServer(function(input, output) {
   data(gapminder, package = "gapminder")
-  data<-filter(gapminder,continent=='Asia')
+  
   model <- lm(lifeExp ~ gdpPercap, data = gapminder)
   
   
